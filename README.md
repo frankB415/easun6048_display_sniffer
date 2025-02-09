@@ -137,7 +137,7 @@ examples:
 ```
 
 # paket injection to change the settings
-The communication between the display and the mainctrl uses as atart a token. This token is send from the display to the mainctrl, it has about 100bytes and changes every startup time. I wasnt able to decrypt it. Also if i tried to copy that token und send it directly to the mainctrl wasnt successful. 
+The communication between the display and the mainctrl uses a start token. This token is send from the display to the mainctrl, it has about 100bytes and changes every startup time. I wasnt able to decrypt it. Also if i tried to copy that token und send it directly to the mainctrl wasnt successful. 
 So I decided to inject pakages in the running communication between the display and the mainctrl.
 
 For that, the ESP uses pin 25 and 26 for lissening ( 25:rx , 26,rx) of packages. If there is a request, that the boost voltage shall be changed, the ESP change from rx to tx, inject the package, and than return bach to rx.
