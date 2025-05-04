@@ -151,6 +151,6 @@ The used software can be found under "easun6048_display_mitm".
 ![connection for packet injection](./Schematic_EASUN6048_ESP32.png )
 
 # EMC issues with the Sniffer
-I observed some EMC issues, if the EASUN increses its power more than 10A. Than the serial transsiver of the ESP got in trouble. I solved that, if i added two blocking capacitors direct to the ESP pins!.
+I observed some EMC issues, if the EASUN increses its power more than 10A. Than the serial transceiver of the ESP got in trouble. I solved that, if i added two blocking capacitors direct to the ESP pins!.
 
 ![esp32 emc blocking](./esp32_emc_blocking.jpg)
